@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: rgb(255, 249, 243);
+    font-family: "bickham-script-pro-3", sans-serif;
+    height: 100%;
+    color: #333;
+    border: 5px double #333;
+    border-width: 1em;
+    margin: 4em;
+    text-align: left;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    padding-top: 18em;
+    padding-left: 6em;
+}
+
+svg text {
+    font-family: "bickham-script-pro-3", sans-serif;
+    font-size: 15em; 
+    fill: rgb(255, 249, 243);
+    stroke: rgb(0, 0, 0);
+    stroke-width: 1.8px;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 5s ease-in-out infinite alternate;
+    animation-delay: 1s;
+    font-weight: 900; 
+
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 0;
+    text-align: center;
+}
+
+p { 
+    font-size: 40px;
+    line-height: 1.6;
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    border: 5px double #333;
+}
+
+h2,h3{
+    font-size: 5em;
+}
+
+img:last-of-type{
+    border: none;
+width: 38em;
+margin-top: 10em;
+margin-bottom: 5em;
+}
+
+img:nth-of-type(2){
+width: 20em;
+margin-bottom: 3em;
+}
+
+p:last-of-type{
+    font-size: 5em;
+    margin-bottom: 1em;
+    margin-left: 4.5em;
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typewriter p {
+    font-size: 40px;
+    line-height: 1.6;
+    margin-bottom: 2em;
+    overflow: hidden; 
+    border-right: .15em solid black;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: blink 0.75s step-end infinite;
+}
+
